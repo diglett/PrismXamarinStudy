@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.15
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrismXamarinStudy", "PrismXamarinStudy\PrismXamarinStudy\PrismXamarinStudy.csproj", "{AC5623F3-592F-4623-A5C1-8A711ABF080A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrismXamarinStudy.Droid", "PrismXamarinStudy\PrismXamarinStudy.Droid\PrismXamarinStudy.Droid.csproj", "{F36FE477-89C6-4AA2-BC6A-CF23AD2958AE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modules", "Modules\Modules\Modules.csproj", "{474FE3FE-9217-48FA-9BAA-87A195FF1D5D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,6 +25,10 @@ Global
 		{F36FE477-89C6-4AA2-BC6A-CF23AD2958AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F36FE477-89C6-4AA2-BC6A-CF23AD2958AE}.Release|Any CPU.Build.0 = Release|Any CPU
 		{F36FE477-89C6-4AA2-BC6A-CF23AD2958AE}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{474FE3FE-9217-48FA-9BAA-87A195FF1D5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{474FE3FE-9217-48FA-9BAA-87A195FF1D5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{474FE3FE-9217-48FA-9BAA-87A195FF1D5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{474FE3FE-9217-48FA-9BAA-87A195FF1D5D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

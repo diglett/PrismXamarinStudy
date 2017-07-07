@@ -19,6 +19,12 @@ namespace PrismXamarinStudy.ViewModels
             set { Set(() => Title, value); }
         }
 
+        public bool IsSampleModuleRegistered
+        {
+            get { return Get(() => IsSampleModuleRegistered); }
+            set { Set(() => IsSampleModuleRegistered, value); }
+        }
+
         public ICommand SecondPageCommand
         {
             get
@@ -30,10 +36,26 @@ namespace PrismXamarinStudy.ViewModels
             }
         }
 
+        public ICommand LoadSampleModuleCommand
+        {
+            get
+            {
+                return new DelegateCommand(() => 
+                {
+                    LoadSampleModule();
+                });
+            }
+        }
+
         public MainPageViewModel(INavigationService navigationService, IModuleManager moduleManager) : base(navigationService)
         {
             _moduleManager = moduleManager;
-            //LoadModuleACommand = new DelegateCommand(LoadModuleA);
+        }
+
+        private void LoadSampleModule()
+        {
+            _moduleManager.LoadModule("ModuleA");
+            IsSampleModuleRegistered = true;
         }
 
         public void OnNavigatedFrom(NavigationParameters parameters)

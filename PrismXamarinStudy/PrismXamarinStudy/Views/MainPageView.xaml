@@ -7,7 +7,7 @@
              Title="MainPageView">
     <StackLayout>
         <Label Text="{Binding Title}" VerticalOptions="Center" HorizontalOptions="Center" />
-        <!--<Button Command="{Binding LoadModuleACommand}" Text="Load Module A" />-->
+        <Button Command="{Binding LoadSampleModuleCommand}" Text="Load Sample Module" />
         <Button Command="{Binding SecondPageCommand}" Text="Go SecondPage" />
     </StackLayout>
 </ContentPage>

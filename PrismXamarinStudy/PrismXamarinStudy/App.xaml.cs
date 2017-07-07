@@ -1,6 +1,9 @@
-﻿using Prism.Navigation;
+﻿using Modules;
+using Prism.Modularity;
+using Prism.Navigation;
 using Prism.Unity;
 using PrismXamarinStudy.Views;
+using System;
 
 namespace PrismXamarinStudy
 {
@@ -24,6 +27,11 @@ namespace PrismXamarinStudy
             Container.RegisterTypeForNavigation<NavigationPageView>();
             Container.RegisterTypeForNavigation<MainPageView>();
             Container.RegisterTypeForNavigation<SecondPageView>();
+        }
+
+        protected override void ConfigureModuleCatalog()
+        {
+            ModuleCatalog.AddModule(new ModuleInfo(typeof(ModuleA)));
         }
     }
 }
